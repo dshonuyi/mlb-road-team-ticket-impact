@@ -1,0 +1,101 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              log_price   R-squared:                       0.772
+Model:                            OLS   Adj. R-squared:                  0.762
+Method:                 Least Squares   F-statistic:                     93.92
+Date:                Mon, 05 Oct 2026   Prob (F-statistic):               0.00
+Time:                        11:41:25   Log-Likelihood:                -157.22
+No. Observations:                1622   AIC:                             452.4
+Df Residuals:                    1553   BIC:                             824.5
+Df Model:                          68                                         
+Covariance Type:                  HC3                                         
+=========================================================================================================
+                                            coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------
+Intercept                                 2.8361      0.055     51.294      0.000       2.728       2.944
+C(road_team)[T.Athletics]                -0.0070      0.049     -0.143      0.886      -0.103       0.089
+C(road_team)[T.Atlanta Braves]            0.2586      0.056      4.611      0.000       0.149       0.369
+C(road_team)[T.Baltimore Orioles]         0.1136      0.048      2.361      0.018       0.019       0.208
+C(road_team)[T.Boston Red Sox]            0.4363      0.045      9.783      0.000       0.349       0.524
+C(road_team)[T.Chicago Cubs]              0.5240      0.058      9.021      0.000       0.410       0.638
+C(road_team)[T.Chicago White Sox]         0.1770      0.052      3.402      0.001       0.075       0.279
+C(road_team)[T.Cincinnati Reds]           0.0685      0.052      1.316      0.188      -0.034       0.171
+C(road_team)[T.Cleveland Guardians]       0.0881      0.049      1.805      0.071      -0.008       0.184
+C(road_team)[T.Colorado Rockies]          0.0544      0.050      1.078      0.281      -0.045       0.153
+C(road_team)[T.Detroit Tigers]            0.1056      0.051      2.087      0.037       0.006       0.205
+C(road_team)[T.Houston Astros]            0.1595      0.044      3.623      0.000       0.073       0.246
+C(road_team)[T.Kansas City Royals]        0.0729      0.046      1.571      0.116      -0.018       0.164
+C(road_team)[T.Los Angeles Angels]        0.0788      0.047      1.664      0.096      -0.014       0.172
+C(road_team)[T.Los Angeles Dodgers]       0.8951      0.061     14.615      0.000       0.775       1.015
+C(road_team)[T.Miami Marlins]             0.0043      0.050      0.086      0.931      -0.094       0.102
+C(road_team)[T.Milwaukee Brewers]         0.0865      0.054      1.616      0.106      -0.018       0.191
+C(road_team)[T.Minnesota Twins]           0.1435      0.051      2.805      0.005       0.043       0.244
+C(road_team)[T.New York Mets]             0.3925      0.056      7.004      0.000       0.283       0.502
+C(road_team)[T.New York Yankees]          0.7825      0.050     15.662      0.000       0.685       0.880
+C(road_team)[T.Philadelphia Phillies]     0.3161      0.049      6.478      0.000       0.220       0.412
+C(road_team)[T.Pittsburgh Pirates]        0.0883      0.045      1.975      0.048       0.001       0.176
+C(road_team)[T.San Diego Padres]          0.1970      0.041      4.839      0.000       0.117       0.277
+C(road_team)[T.San Francisco Giants]      0.2618      0.048      5.422      0.000       0.167       0.356
+C(road_team)[T.Seattle Mariners]          0.0965      0.050      1.923      0.055      -0.002       0.195
+C(road_team)[T.St. Louis Cardinals]       0.1792      0.058      3.104      0.002       0.066       0.292
+C(road_team)[T.Tampa Bay Rays]            0.0354      0.050      0.707      0.480      -0.063       0.134
+C(road_team)[T.Texas Rangers]             0.1397      0.044      3.183      0.001       0.054       0.226
+C(road_team)[T.Toronto Blue Jays]         0.2463      0.048      5.172      0.000       0.153       0.340
+C(road_team)[T.Washington Nationals]      0.0829      0.047      1.767      0.077      -0.009       0.175
+C(home_team)[T.Athletics]                 0.9677      0.056     17.413      0.000       0.859       1.077
+C(home_team)[T.Atlanta Braves]            0.5228      0.048     10.877      0.000       0.429       0.617
+C(home_team)[T.Baltimore Orioles]         0.4428      0.057      7.798      0.000       0.332       0.554
+C(home_team)[T.Boston Red Sox]            1.2554      0.052     24.367      0.000       1.154       1.356
+C(home_team)[T.Chicago Cubs]              1.1965      0.059     20.178      0.000       1.080       1.313
+C(home_team)[T.Chicago White Sox]         0.0950      0.060      1.586      0.113      -0.022       0.212
+C(home_team)[T.Cincinnati Reds]           0.1867      0.050      3.729      0.000       0.089       0.285
+C(home_team)[T.Cleveland Guardians]       0.7617      0.050     15.246      0.000       0.664       0.860
+C(home_team)[T.Colorado Rockies]          0.3312      0.047      7.099      0.000       0.240       0.423
+C(home_team)[T.Detroit Tigers]            0.2048      0.051      4.035      0.000       0.105       0.304
+C(home_team)[T.Houston Astros]            0.4692      0.049      9.543      0.000       0.373       0.566
+C(home_team)[T.Kansas City Royals]        0.3139      0.059      5.336      0.000       0.199       0.429
+C(home_team)[T.Los Angeles Angels]       -0.2631      0.057     -4.607      0.000      -0.375      -0.151
+C(home_team)[T.Los Angeles Dodgers]       1.5515      0.056     27.635      0.000       1.441       1.661
+C(home_team)[T.Miami Marlins]             0.1083      0.048      2.238      0.025       0.013       0.203
+C(home_team)[T.Milwaukee Brewers]         0.3687      0.065      5.653      0.000       0.241       0.496
+C(home_team)[T.Minnesota Twins]           0.2816      0.052      5.465      0.000       0.181       0.383
+C(home_team)[T.New York Mets]             0.3385      0.059      5.729      0.000       0.223       0.454
+C(home_team)[T.New York Yankees]          0.5271      0.075      6.997      0.000       0.379       0.675
+C(home_team)[T.Philadelphia Phillies]     1.0009      0.053     18.822      0.000       0.897       1.105
+C(home_team)[T.Pittsburgh Pirates]        0.5414      0.093      5.832      0.000       0.359       0.723
+C(home_team)[T.San Diego Padres]          0.6459      0.063     10.259      0.000       0.523       0.769
+C(home_team)[T.San Francisco Giants]      0.8850      0.064     13.777      0.000       0.759       1.011
+C(home_team)[T.Seattle Mariners]          0.6667      0.053     12.530      0.000       0.562       0.771
+C(home_team)[T.St. Louis Cardinals]       0.2633      0.051      5.145      0.000       0.163       0.364
+C(home_team)[T.Tampa Bay Rays]            0.6999      0.049     14.249      0.000       0.604       0.796
+C(home_team)[T.Texas Rangers]             0.1565      0.058      2.677      0.007       0.042       0.271
+C(home_team)[T.Toronto Blue Jays]         0.7189      0.060     12.001      0.000       0.601       0.836
+C(home_team)[T.Washington Nationals]      0.3000      0.050      6.002      0.000       0.202       0.398
+C(month)[T.July]                          0.0452      0.018      2.461      0.014       0.009       0.081
+C(month)[T.June]                         -0.0447      0.019     -2.377      0.017      -0.081      -0.008
+C(month)[T.May]                          -0.2779      0.043     -6.503      0.000      -0.362      -0.194
+C(month)[T.September]                    -0.0688      0.019     -3.542      0.000      -0.107      -0.031
+C(day_of_week)[T.Monday]                 -0.3452      0.026    -13.341      0.000      -0.396      -0.294
+C(day_of_week)[T.Saturday]                0.1156      0.013      8.647      0.000       0.089       0.142
+C(day_of_week)[T.Sunday]                 -0.1033      0.014     -7.626      0.000      -0.130      -0.077
+C(day_of_week)[T.Thursday]               -0.3334      0.030    -11.145      0.000      -0.392      -0.275
+C(day_of_week)[T.Tuesday]                -0.3860      0.025    -15.342      0.000      -0.435      -0.337
+C(day_of_week)[T.Wednesday]              -0.3984      0.025    -16.005      0.000      -0.447      -0.350
+weekend                                   0.0123      0.014      0.902      0.367      -0.014       0.039
+==============================================================================
+Omnibus:                      106.733   Durbin-Watson:                   1.339
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              259.593
+Skew:                           0.380   Prob(JB):                     4.27e-57
+Kurtosis:                       4.807   Cond. No.                     1.95e+15
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+[2] The smallest eigenvalue is 6.43e-28. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+
+Notes:
+Rows used in model: 1622
+Road teams modeled: 30
+Median get-in price used for dollar premium conversion: $27.00
+Dollar premiums are relative to the average road team after controls for home team, month, day of week, and weekend.
